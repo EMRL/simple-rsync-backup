@@ -40,12 +40,12 @@ NOTIFICATION_SLACK="https://hooks.slack.com/services/#########/#########/#######
 
 # Main application
 function main() {
-    get_fullpath		# Make sure we have what we need to run
-    backup      		# Run the backup and upload
-    filecount		    # Count number of backup files 
-    email_notify		# Build and send email
-    # slack_notify		# Build and send Slack webhook
-    cleanup 		    # Clean up leftovers
+    get_fullpath        # Make sure we have what we need to run
+    backup              # Run the backup and upload
+    filecount           # Count number of backup files 
+    email_notify        # Build and send email
+    slack_notify        # Build and send Slack webhook
+    cleanup             # Clean up leftovers
 }
 
 function get_fullpath() {
